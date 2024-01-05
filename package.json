@@ -1,0 +1,36 @@
+{
+  "name": "gitlab_mr",
+  "version": "1.0.0",
+  "description": "Gitlab Merge Request",
+  "main": "index.js",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc",
+    "watch": "tsc -watch"
+  },
+  "activationEvents": [
+    "onCommand:extension.createMergeRequest"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createMergeRequest",
+        "title": "Create GitLab Merge Request"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/munkgorn/gitlab_mr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/munkgorn/gitlab_mr/issues"
+  },
+  "homepage": "https://github.com/munkgorn/gitlab_mr#readme"
+}
